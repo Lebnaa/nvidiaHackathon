@@ -1,0 +1,46 @@
+# Environments
+.venv
+env/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data
+data/*
+!data/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+
+# NVIDIA/Logs
+*.log
+*.pid
+nemo_experiments/
+
+# Next.js / Frontend
+src/frontend/.next/
+src/frontend/node_modules/
+
+# Local Databases (SQLite / ChromaDB)
+src/backend/database/data/
+
+# Local runtime data (calendar events, push subscriptions) — kept on disk, never tracked
+src/backend/data/
+
+# Secrets — VAPID private key for Web Push (keep on disk, never commit)
+src/backend/keys/vapid_private.pem
+
+# Eval/test outputs — companion replies echo real patient data; keep local
+/test-results/
+
+# Personal Claude Code config (shared .claude/ config IS committed; this isn't)
+.claude/settings.local.json
